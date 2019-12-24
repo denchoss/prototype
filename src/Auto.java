@@ -1,8 +1,6 @@
-import java.util.Objects;
-public class Auto  {
-    public int engineCapacity;
-    private int hp=120;
-    public String color;
+
+public class Auto extends Transport  {
+    private int numberOfWheels=4;
 
     public Auto() {
     }
@@ -19,9 +17,8 @@ public class Auto  {
         return new Auto(this);
     }
 
-    public boolean equals(Object object2) {
-        if (!(object2 instanceof Auto)) return false;
-        Auto shape2 = (Auto) object2;
-        return shape2.engineCapacity == engineCapacity && shape2.hp == hp && Objects.equals(shape2.color, color);
+    public void startEngine(){
+        System.out.print("turn the ignition key\n");
     }
+
 }
