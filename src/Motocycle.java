@@ -20,6 +20,7 @@ public class Motocycle extends Transport{
 
     public void startEngine(){
         System.out.print("use kickstart\n");
+        this.changeState(new EngineOn(this));
     }
 
 

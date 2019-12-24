@@ -14,7 +14,9 @@ public class Main {
         motocycle.color = "red";
 
         anotherAuto.startEngine();
-        motocycle.startEngine();
+        motocycle.accselerate();
+        anotherAuto.accselerate();
+        auto.stop();
 
     }
 }
