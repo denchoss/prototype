@@ -18,5 +18,9 @@ public class Main {
         anotherAuto.accselerate();
         auto.stop();
 
+        auto.events.subscribe("car is free",new Listener1());
+        auto.carClose();
+
+
     }
 }
